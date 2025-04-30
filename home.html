@@ -24,10 +24,32 @@
         </header>
         <main>
             <div class="search-container">
-
+                <section>
+                    <form class="search-form" onsubmit="return false;">
+                        <input type="text" class="search-bar" placeholder="Search Recipes..." onkeypress="if(event.key === 'Enter') { console.log('Search submitted:', this.value); }">
+                        <div class="search-icon">
+                            <img src="assets/home.png" alt="Filter" style="height: 20px;">
+                        </div>
+                    </form>
+                </section>
+                <section>
+                    <div class="search-title">
+                        <h3>Popular Recipes</h3>
+                        <a>View all</a>
+                    </div>
+                    <div class="search-options">
+                        <div class="option"><span>Most Viewed</span></div>
+                        <div class="option"><span>Latest</span></div>
+                        <div class="option"><span>Healthy</span></div>
+                    </div>
+                </section>
             </div>
             <div class="recipes-container">
-
+                <div class="card"><img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2023-01-Caramelized-Tomato-Paste-Pasta%2F06-CARAMELIZED-TOMATO-PASTE-PASTA-039"/></div>
+                <div class="card"><img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2023-01-Caramelized-Tomato-Paste-Pasta%2F06-CARAMELIZED-TOMATO-PASTE-PASTA-039"/></div>
+                <div class="card"><img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2023-01-Caramelized-Tomato-Paste-Pasta%2F06-CARAMELIZED-TOMATO-PASTE-PASTA-039"/></div>
+                <div class="card"><img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2023-01-Caramelized-Tomato-Paste-Pasta%2F06-CARAMELIZED-TOMATO-PASTE-PASTA-039"/></div>
+                <div class="card"><img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2023-01-Caramelized-Tomato-Paste-Pasta%2F06-CARAMELIZED-TOMATO-PASTE-PASTA-039"/></div>
             </div>
         </main>
         <footer>
