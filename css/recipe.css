@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100%;
+}
+
+.app {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    overflow-y: auto;
+
+    mask: linear-gradient(black 70%, rgba(0, 0, 0, 0.3), transparent);
+    backdrop-filter: blur(100px);
+}
+
+.recipe-card {
+    width: 85%;
+    height: 500px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.recipe-card-content {
+    width: 80%;
+    height: 100px;
+    padding: 10px 5px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.inner-recipe-card-content{
+    width: auto;
+    height: 100%;
+    display:inline-block; 
+}
+
+.recipe-card-content h1{
+    font-size: 1.4rem;
+    color: white;
+    display:inline-block; 
+}
+
+.recipe-card-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+}
+
+.recipe-card-info h4 {
+    color: white;
+}
+
+section {
+    width: 90%;
+    height: auto;
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.recipe-info {
+    display: flex;
+    justify-content: space-between
+}
+
+.info {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info span {
+    font-size: 1.2rem;
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    background: grey;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container img {
+    max-width: 50%;
+}
+
+section p {
+    font-size: 1.2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100vw;
+    height: 80px;
+}
+
+footer img {
+    height: 25px;
+}
