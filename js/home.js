@@ -38,14 +38,34 @@ function populateRecipes() {
         const cardInfo = document.createElement("div");
         cardInfo.className = "recipe-card-info";
 
+        const cuisineContainer = document.createElement("div");
+        cuisineContainer.className = "recipe-rating";
+
         const cuisine = document.createElement("h4");
         cuisine.textContent = recipeData.Cuisine;
 
-        const price = document.createElement("span");
-        price.textContent = "$$$";
+        const cuisineIcon = document.createElement("img");
+        cuisineIcon.src = "./assets/pin.png";
+        cuisineIcon.alt = "Location Icon";
 
-        cardInfo.appendChild(cuisine);
-        cardInfo.appendChild(price);
+        cuisineContainer.appendChild(cuisineIcon);
+        cuisineContainer.appendChild(cuisine);
+
+        const ratingContainer = document.createElement("div");
+        ratingContainer.className = "recipe-rating";
+
+        const rating = document.createElement("span");
+        rating.textContent = recipeData.Rating;
+
+        const ratingIcon = document.createElement("img");
+        ratingIcon.src = "./assets/star.png";
+        ratingIcon.alt = "Rating Icon";
+
+        ratingContainer.appendChild(ratingIcon);
+        ratingContainer.appendChild(rating);
+
+        cardInfo.appendChild(cuisineContainer);
+        cardInfo.appendChild(ratingContainer);
 
         innerContent.appendChild(title);
         innerContent.appendChild(cardInfo);

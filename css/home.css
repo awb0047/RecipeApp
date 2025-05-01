@@ -197,12 +197,24 @@ section {
 
 .recipe-card-info h4 {
     font-size: 0.9rem;
-    color: white;
+    color: #CAC8C8;
 }
 
-.recipe-card-info span {
+.recipe-rating {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.recipe-rating img{
+    width: 15px;
+}
+
+.recipe-rating span {
     font-size: 0.9rem;
-    color: darkgray;
+    color: #CAC8C8;
 }
 
 footer {
