@@ -30,7 +30,7 @@ header {
 .inner-header h1 {
     font-size: 2.3rem;
     font-weight: normal;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .inner-header h2 {
@@ -158,13 +158,51 @@ section {
     flex-shrink: 0;
     border-radius: 25px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
-.card img {
-    width: 100%;
+.recipe-card-content {
+    width: 80%;
+    height: 70px;
+    padding: 10px 5px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.inner-recipe-card-content{
+    width: auto;
     height: 100%;
-    object-fit: cover;
-    border-radius: 25px;
+    display:inline-block; 
+}
+
+.recipe-card-content h1{
+    font-size: 0.9rem;
+    color: white;
+    display:inline-block;
+    min-width: 150px;
+}
+
+.recipe-card-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.recipe-card-info h4 {
+    font-size: 0.9rem;
+    color: white;
+}
+
+.recipe-card-info span {
+    font-size: 0.9rem;
+    color: darkgray;
 }
 
 footer {

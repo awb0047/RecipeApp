@@ -1,13 +1,57 @@
 // Load recipes from database here
+let recipes = [];
+fetch('./testdata.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        recipes = data;
+        populateRecipes();
+    })
+    .catch(error => {
+        console.error('Failed to load JSON:', error);
+    });
 
-// Find recipes div and add children
-const recipesDiv = document.getElementById("recipes");
-for (let i = 1; i <= 3; i++) {
-    const recipe = document.createElement("a");
-    recipe.href = `/recipe.html#${i}`;
-    recipe.className = "card";
-    const img = document.createElement("img");
-    img.src = "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2023-01-Caramelized-Tomato-Paste-Pasta%2F06-CARAMELIZED-TOMATO-PASTE-PASTA-039";
-    recipe.appendChild(img);
-    recipesDiv.appendChild(recipe);
+function populateRecipes() {
+    const recipesDiv = document.getElementById("recipes");
+    recipes.forEach((recipeData, index) => {
+        const recipe = document.createElement("a");
+        recipe.href = `/recipe.html#${recipeData.id}`;
+        recipe.className = "card";
+        recipe.style.backgroundImage = `url(${recipeData.PictureOfProduct})`;
+        recipesDiv.appendChild(recipe);
+
+        // Add blur card over
+        const cardContent = document.createElement("div");
+        cardContent.className = "recipe-card-content";
+
+        const innerContent = document.createElement("div");
+        innerContent.className = "inner-recipe-card-content";
+
+        const title = document.createElement("h1");
+        title.id = "title";
+        title.textContent = recipeData.Title;
+
+        const cardInfo = document.createElement("div");
+        cardInfo.className = "recipe-card-info";
+
+        const cuisine = document.createElement("h4");
+        cuisine.textContent = recipeData.Cuisine;
+
+        const price = document.createElement("span");
+        price.textContent = "$$$";
+
+        cardInfo.appendChild(cuisine);
+        cardInfo.appendChild(price);
+
+        innerContent.appendChild(title);
+        innerContent.appendChild(cardInfo);
+
+        cardContent.appendChild(innerContent);
+
+        recipe.appendChild(cardContent);
+    });
 }

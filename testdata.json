@@ -1,0 +1,316 @@
+[
+    {
+        "id": 1,
+        "Title": "Scrambled Eggs with Toast",
+        "Meal": "Breakfast",
+        "Difficulty": "Easy",
+        "TimeToPrepare": "15 minutes",
+        "Cuisine": "American",
+        "Ingredients": [
+            { "item": "Eggs", "cost": 1.5 },
+            { "item": "Bread", "cost": 1.0 },
+            { "item": "Butter", "cost": 0.5 },
+            { "item": "Salt", "cost": 0.1 },
+            { "item": "Pepper", "cost": 0.1 }
+        ],
+        "ServingSize": 2,
+        "Description": "Classic scrambled eggs with toast.",
+        "Instructions": [
+            "Crack the eggs into a bowl and whisk with salt and pepper.",
+            "Heat butter in a skillet over medium heat.",
+            "Pour the eggs into the skillet and stir until cooked.",
+            "Toast the bread and serve with the scrambled eggs."
+        ],
+        "PictureOfProduct": "https://www.budgetbytes.com/wp-content/uploads/2024/09/Scrambled-Eggs-Close.jpg",
+        "Rating": 4.5,
+        "NutritionalInfo": {
+            "Calories": 250,
+            "Protein": "12g",
+            "Carbohydrates": "20g",
+            "Fat": "12g"
+        }
+    },
+    {
+        "id": 2,
+        "Title": "Spaghetti Bolognese",
+        "Meal": "Lunch",
+        "Difficulty": "Medium",
+        "TimeToPrepare": "30 minutes",
+        "Cuisine": "Italian",
+        "Ingredients": [
+            { "item": "Pasta", "cost": 2.0 },
+            { "item": "Tomato Sauce", "cost": 1.5 },
+            { "item": "Ground Beef", "cost": 4.0 },
+            { "item": "Garlic", "cost": 0.5 },
+            { "item": "Parmesan Cheese", "cost": 1.5 }
+        ],
+        "ServingSize": 4,
+        "Description": "A hearty spaghetti Bolognese with rich tomato sauce.",
+        "Instructions": [
+            "Cook the pasta according to package instructions.",
+            "In a skillet, cook the ground beef until browned.",
+            "Add garlic and tomato sauce to the skillet and simmer.",
+            "Serve the sauce over the pasta and top with Parmesan cheese."
+        ],
+        "PictureOfProduct": "https://www.tamingtwins.com/wp-content/uploads/2025/01/spaghetti-bolognese-10.jpg",
+        "Rating": 4.7,
+        "NutritionalInfo": {
+            "Calories": 600,
+            "Protein": "25g",
+            "Carbohydrates": "70g",
+            "Fat": "20g"
+        }
+    },
+    {
+        "id": 3,
+        "Title": "Chicken Fajitas",
+        "Meal": "Dinner",
+        "Difficulty": "Medium",
+        "TimeToPrepare": "45 minutes",
+        "Cuisine": "Mexican",
+        "Ingredients": [
+            { "item": "Chicken Breast", "cost": 5.0 },
+            { "item": "Tortillas", "cost": 2.0 },
+            { "item": "Bell Peppers", "cost": 1.5 },
+            { "item": "Onion", "cost": 0.5 },
+            { "item": "Cheese", "cost": 1.5 },
+            { "item": "Sour Cream", "cost": 1.0 },
+            { "item": "Taco Seasoning", "cost": 0.5 }
+        ],
+        "ServingSize": 4,
+        "Description": "A flavorful chicken fajitas dinner with fresh vegetables and warm tortillas.",
+        "Instructions": [
+            "Slice the chicken breast, bell peppers, and onion into strips.",
+            "Heat a large skillet over medium-high heat and cook the chicken until browned.",
+            "Add the bell peppers, onion, and taco seasoning to the skillet and cook until the vegetables are tender.",
+            "Warm the tortillas in a separate pan or microwave.",
+            "Assemble the fajitas by placing the chicken and vegetables onto the tortillas.",
+            "Top with cheese and sour cream, then serve."
+        ],
+        "PictureOfProduct": "https://feelgoodfoodie.net/wp-content/uploads/2024/08/Chicken-Fajitas-16.jpg",
+        "Rating": 4.8,
+        "NutritionalInfo": {
+            "Calories": 450,
+            "Protein": "30g",
+            "Carbohydrates": "35g",
+            "Fat": "18g"
+        }
+    },
+    {
+        "id": 4,
+        "Title": "Apple Slices with Peanut Butter",
+        "Meal": "Snack",
+        "Difficulty": "Easy",
+        "TimeToPrepare": "10 minutes",
+        "Cuisine": "American",
+        "Ingredients": [
+            { "item": "Apple", "cost": 0.5 },
+            { "item": "Peanut Butter", "cost": 1.0 }
+        ],
+        "ServingSize": 1,
+        "Description": "A quick and healthy apple slices with peanut butter snack.",
+        "Instructions": [
+            "Slice the apple into wedges.",
+            "Spread peanut butter on each slice and serve."
+        ],
+        "PictureOfProduct": "https://images.heb.com/is/image/HEBGrocery/Large/apple-slices-with-peanut-butter-snack-recipe-1.jpg",
+        "Rating": 4.6,
+        "NutritionalInfo": {
+            "Calories": 200,
+            "Protein": "6g",
+            "Carbohydrates": "25g",
+            "Fat": "8g"
+        }
+    },
+    {
+        "id": 5,
+        "Title": "French Vanilla Custard Tart",
+        "Meal": "Dessert",
+        "Difficulty": "Medium",
+        "TimeToPrepare": "1 hour",
+        "Cuisine": "French",
+        "Ingredients": [
+            { "item": "Flour", "cost": 1.0 },
+            { "item": "Butter", "cost": 1.5 },
+            { "item": "Sugar", "cost": 1.0 },
+            { "item": "Eggs", "cost": 1.5 },
+            { "item": "Vanilla Extract", "cost": 0.5 },
+            { "item": "Milk", "cost": 1.0 }
+        ],
+        "ServingSize": 6,
+        "Description": "A classic French vanilla custard dessert.",
+        "Instructions": [
+            "Preheat the oven to 350°F (175°C).",
+            "Mix flour, sugar, and butter to form a dough.",
+            "Press the dough into a tart pan and bake for 15 minutes.",
+            "Whisk eggs, milk, and vanilla extract to make the custard filling.",
+            "Pour the custard into the tart shell and bake for 30 minutes.",
+            "Cool before serving."
+        ],
+        "PictureOfProduct": "https://simmeringstarfruit.com/wp-content/uploads/2024/02/flan-patisserie-1c.jpeg?w=1024",
+        "Rating": 4.9,
+        "NutritionalInfo": {
+            "Calories": 300,
+            "Protein": "8g",
+            "Carbohydrates": "35g",
+            "Fat": "12g"
+        }
+    },
+    {
+        "id": 6,
+        "Title": "Breakfast Burrito",
+        "Meal": "Breakfast",
+        "Difficulty": "Easy",
+        "TimeToPrepare": "10 minutes",
+        "Cuisine": "Mexican",
+        "Ingredients": [
+            { "item": "Tortilla", "cost": 0.5 },
+            { "item": "Eggs", "cost": 1.5 },
+            { "item": "Cheese", "cost": 1.0 },
+            { "item": "Salsa", "cost": 1.0 }
+        ],
+        "ServingSize": 1,
+        "Description": "A quick breakfast burrito with eggs and cheese.",
+        "Instructions": [
+            "Scramble the eggs in a skillet.",
+            "Warm the tortilla in a pan or microwave.",
+            "Place the eggs, cheese, and salsa on the tortilla.",
+            "Roll up the tortilla and serve."
+        ],
+        "PictureOfProduct": "https://images.themodernproper.com/production/posts/BreakfastBurritos_13.jpg?w=1200&h=1200&q=60&fm=jpg&fit=crop&dm=1712004278&s=744bbf8f96f8f7b3cc1ebf5c7c614007",
+        "Rating": 4.7,
+        "NutritionalInfo": {
+            "Calories": 300,
+            "Protein": "15g",
+            "Carbohydrates": "20g",
+            "Fat": "15g"
+        }
+    },
+    {
+        "id": 7,
+        "Title": "Vegetable Fried Rice",
+        "Meal": "Lunch",
+        "Difficulty": "Easy",
+        "TimeToPrepare": "20 minutes",
+        "Cuisine": "Asian",
+        "Ingredients": [
+            { "item": "Rice", "cost": 1.0 },
+            { "item": "Soy Sauce", "cost": 0.5 },
+            { "item": "Eggs", "cost": 1.5 },
+            { "item": "Green Onions", "cost": 0.5 },
+            { "item": "Carrots", "cost": 0.5 }
+        ],
+        "ServingSize": 2,
+        "Description": "A simple fried rice dish with vegetables and eggs.",
+        "Instructions": [
+            "Cook the rice and let it cool.",
+            "Scramble the eggs in a skillet and set aside.",
+            "Stir-fry the carrots and green onions in the skillet.",
+            "Add the rice and soy sauce, then mix in the scrambled eggs.",
+            "Serve hot."
+        ],
+        "PictureOfProduct": "https://omnivorescookbook.com/wp-content/uploads/2023/06/230515_Vegetable-Fried-Rice_550.jpg",
+        "Rating": 4.6,
+        "NutritionalInfo": {
+            "Calories": 350,
+            "Protein": "10g",
+            "Carbohydrates": "50g",
+            "Fat": "10g"
+        }
+    },
+    {
+        "id": 8,
+        "Title": "Classic Lasagna",
+        "Meal": "Dinner",
+        "Difficulty": "Hard",
+        "TimeToPrepare": "1 hour 30 minutes",
+        "Cuisine": "Italian",
+        "Ingredients": [
+            { "item": "Lasagna Noodles", "cost": 2.0 },
+            { "item": "Ground Beef", "cost": 4.0 },
+            { "item": "Tomato Sauce", "cost": 2.0 },
+            { "item": "Ricotta Cheese", "cost": 3.0 },
+            { "item": "Mozzarella Cheese", "cost": 2.0 },
+            { "item": "Parmesan Cheese", "cost": 1.5 },
+            { "item": "Garlic", "cost": 0.5 }
+        ],
+        "ServingSize": 6,
+        "Description": "A rich and cheesy lasagna with layers of meat and sauce.",
+        "Instructions": [
+            "Cook the lasagna noodles according to package instructions.",
+            "Brown the ground beef in a skillet and add garlic and tomato sauce.",
+            "Layer the noodles, meat sauce, ricotta, and mozzarella in a baking dish.",
+            "Repeat the layers and top with Parmesan cheese.",
+            "Bake at 375°F (190°C) for 45 minutes.",
+            "Let cool for 10 minutes before serving."
+        ],
+        "PictureOfProduct": "https://hips.hearstapps.com/hmg-prod/images/classic-lasagna-secondary-6430791f9451c.jpg",
+        "Rating": 4.9,
+        "NutritionalInfo": {
+            "Calories": 600,
+            "Protein": "30g",
+            "Carbohydrates": "40g",
+            "Fat": "30g"
+        }
+    },
+    {
+        "id": 9,
+        "Title": "Yogurt Parfait",
+        "Meal": "Snack",
+        "Difficulty": "Easy",
+        "TimeToPrepare": "5 minutes",
+        "Cuisine": "American",
+        "Ingredients": [
+            { "item": "Yogurt", "cost": 1.0 },
+            { "item": "Granola", "cost": 1.0 },
+            { "item": "Berries", "cost": 2.0 }
+        ],
+        "ServingSize": 1,
+        "Description": "A quick and healthy yogurt parfait with granola and berries.",
+        "Instructions": [
+            "Layer yogurt, granola, and berries in a glass.",
+            "Repeat the layers and serve immediately."
+        ],
+        "PictureOfProduct": "https://www.thecountrycook.net/wp-content/uploads/2024/03/thumbnail-Yogurt-Parfaits-scaled.jpg",
+        "Rating": 4.8,
+        "NutritionalInfo": {
+            "Calories": 200,
+            "Protein": "8g",
+            "Carbohydrates": "30g",
+            "Fat": "5g"
+        }
+    },
+    {
+        "id": 10,
+        "Title": "Homemade Brownies",
+        "Meal": "Dessert",
+        "Difficulty": "Medium",
+        "TimeToPrepare": "1 hour",
+        "Cuisine": "American",
+        "Ingredients": [
+            { "item": "Flour", "cost": 1.0 },
+            { "item": "Sugar", "cost": 1.0 },
+            { "item": "Butter", "cost": 1.5 },
+            { "item": "Cocoa Powder", "cost": 1.0 },
+            { "item": "Eggs", "cost": 1.5 },
+            { "item": "Vanilla Extract", "cost": 0.5 }
+        ],
+        "ServingSize": 8,
+        "Description": "Rich and fudgy homemade brownies.",
+        "Instructions": [
+            "Preheat the oven to 350°F (175°C).",
+            "Mix flour, sugar, cocoa powder, and butter in a bowl.",
+            "Add eggs and vanilla extract and stir until smooth.",
+            "Pour the batter into a greased baking pan.",
+            "Bake for 30 minutes and let cool before cutting into squares."
+        ],
+        "PictureOfProduct": "https://i2.wp.com/lifemadesimplebakes.com/wp-content/uploads/2020/07/Homemade-Bronwies-square-1200.jpg",
+        "Rating": 4.9,
+        "NutritionalInfo": {
+            "Calories": 300,
+            "Protein": "5g",
+            "Carbohydrates": "40g",
+            "Fat": "15g"
+        }
+    }
+]
