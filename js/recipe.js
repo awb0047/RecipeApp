@@ -1,22 +1,45 @@
 const recipeId = window.location.hash.substring(1);
+let recipe = null;
+fetch('./testdata.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        recipe = data.find(r => r.id === parseInt(recipeId));
+        if (recipe) {
+            populateRecipe();
+        } else {
+            console.error('Recipe not found');
+        }
+    })
+    .catch(error => {
+        console.error('Failed to load JSON:', error);
+    });
 
-//now just append the text into the elements.
-document.getElementById('title').textContent = "Caramelized Tomato Pasta";
-document.getElementById('time').textContent = "1 hour";
-document.getElementById('difficulty').textContent = "Moderate";
-document.getElementById('rating').textContent = "4.8";
-document.getElementById('description').textContent = "If you have a can or two of tomato paste collecting dust in your pantry, look no further than this five-ingredient pasta. It unlocks the power of the humble staple, caramelizing it in a hot pan with olive oil, garlic, and red pepper flakes until it becomes rust-colored, deeply rich, and intensely savory. Combined with starchy pasta water, it magically transforms into a luscious tomato sauce you’ll have thought cooked slowly on the stove all day.";
+function populateRecipe() {
+    document.getElementById('title').textContent = recipe.Title;
+    document.getElementById('cuisine').textContent = recipe.Cuisine;
+    document.getElementById('price').textContent = "$$$";
+    document.getElementById('card').style.backgroundImage = `url(${recipe.PictureOfProduct})`;
+    document.getElementById('time').textContent = recipe.TimeToPrepare;
+    document.getElementById('difficulty').textContent = recipe.Difficulty;
+    document.getElementById('servings').textContent = recipe.ServingSize;
+    document.getElementById('description').textContent = recipe.Description;
 
-const ingredientsList = document.getElementById('ingredients');
-for (let i = 1; i <= 10; i++) {
-    const listItem = document.createElement('li');
-    listItem.textContent = `Test ingredient ${i}`;
-    ingredientsList.appendChild(listItem);
-}
+    const ingredientsList = document.getElementById('ingredients');
+    recipe.Ingredients.forEach(ingredient => {
+        const listItem = document.createElement('li');
+        listItem.textContent = ingredient.item;
+        ingredientsList.appendChild(listItem);
+    });
 
-const instructionsList = document.getElementById('instructions');
-for (let i = 1; i <= 10; i++) {
-    const listItem = document.createElement('li');
-    listItem.textContent = `Instruction ${i}`;
-    instructionsList.appendChild(listItem);
+    const instructionsList = document.getElementById('instructions');
+    recipe.Instructions.forEach(instruction => {
+        const listItem = document.createElement('li');
+        listItem.textContent = instruction;
+        instructionsList.appendChild(listItem);
+    });
 }
